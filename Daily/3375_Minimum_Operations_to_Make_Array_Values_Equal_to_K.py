@@ -31,7 +31,7 @@ class Solution:
 
 # Test
 test1 = Solution([4, 5, 7, 8, 9], 3)
-print(f"Test 1: {test1.minOperations()}")  # Should return 4 (unique nums > 3: 4,5,7,8,9)
+print(f"Test 1: {test1.minOperations()}")  # Should return 5 (unique nums > 3: 4,5,7,8,9)
 
 test2 = Solution([2, 5, 7, 8, 9], 3)
 print(f"Test 2: {test2.minOperations()}")  # Should return -1 (2 is < 3)
