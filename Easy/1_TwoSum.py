@@ -5,6 +5,10 @@ class Solution:
         self.target = target
     
     def twoSum(self) -> list[int]:
+        # Create local variables
+        nums = self.nums
+        target = self.target
+
         # Create a hash map to store values and their indices
         num_map = {}
         
