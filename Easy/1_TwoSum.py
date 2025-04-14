@@ -13,9 +13,9 @@ class Solution:
         num_map = {}
         
         # Iterate through the array
-        for i, num in enumerate(self.nums):
+        for i, num in enumerate(nums):
             # Calculate the complement we need to find
-            complement = self.target - num
+            complement = target - num
             
             # If the complement exists in the map, return its index and current index
             if complement in num_map:

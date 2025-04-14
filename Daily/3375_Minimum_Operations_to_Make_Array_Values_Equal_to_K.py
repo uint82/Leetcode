@@ -11,19 +11,22 @@ class Solution:
         self.k = k
 
     def minOperations(self) -> int:
+        # create a local variable
+        nums = self.nums
+        k = self.k
 
         # check if there is an element that less than k
         # return -1 if exist
-        for num in self.nums:
-            if num < self.k:
+        for num in nums:
+            if num < k:
                 return -1
 
         # check all element that is more than k and not seen yet
         # if it True. increment number of operations and set the num to True
         seen = [False] * 101 # 101 cause the constrain rule in leetcode
         operations = 0
-        for num in self.nums:
-            if num > self.k and not seen[num]:
+        for num in nums:
+            if num > k and not seen[num]:
                 seen[num] = True
                 operations += 1
 
