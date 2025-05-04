@@ -1,3 +1,42 @@
+"""
+Problem #13: Roman to Integer
+
+Convert a Roman numeral to an integer.
+
+Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
+Symbol values:
+- I = 1
+- V = 5
+- X = 10
+- L = 50
+- C = 100
+- D = 500
+- M = 1000
+
+Roman numerals are usually written largest to smallest from left to right, but there are special cases:
+- IV = 4 (5-1)
+- IX = 9 (10-1)
+- XL = 40 (50-10)
+- XC = 90 (100-10)
+- CD = 400 (500-100)
+- CM = 900 (1000-100)
+
+Example:
+Input: s = "MCMXCIV"
+Output: 1994
+Explanation: M = 1000, CM = 900, XC = 90, IV = 4.
+
+Approach:
+- Create a hash map to store the values of Roman symbols.
+- Iterate through the string from left to right.
+- Compare the current symbol with the next one:
+  - If the current symbol has a smaller value than the next one, subtract it (special case).
+  - Otherwise, add its value to the result.
+- Use a skip flag to handle cases where two symbols form a special case.
+
+Time Complexity: O(n) — where n is the length of the input string
+Space Complexity: O(1) — constant space for the symbol value dictionary
+"""
 
 class Solution:
 

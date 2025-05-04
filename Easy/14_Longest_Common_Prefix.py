@@ -1,10 +1,31 @@
-# This solution finds the longest common prefix among a list of strings.
-# First, handle edge cases: if the list is empty, return an empty string; if there's only one string, return that string.
-# Then, find the length of the shortest string in the list to avoid index errors.
-# Iterate over the characters of the first string up to the shortest length.
-# For each position, compare the character in the first string with the character at the same position in all other strings.
-# If a mismatch is found, return the prefix of the first string up to that position.
-# If no mismatch is found, return the prefix of the first string up to the length of the shortest string.
+"""
+Problem #14: Longest Common Prefix
+
+Write a function to find the longest common prefix string amongst an array of strings.
+If there is no common prefix, return an empty string "".
+
+Examples:
+Input: strs = ["flower", "flow", "flight"]
+Output: "fl"
+
+Input: strs = ["dog", "racecar", "car"]
+Output: ""
+Explanation: There is no common prefix among the input strings.
+
+Approach:
+- Handle edge cases first:
+  - If the array is empty, return an empty string.
+  - If there's only one string, return that string as the prefix.
+- Find the length of the shortest string to avoid index errors.
+- Iterate through the characters of the first string up to the shortest length.
+- For each position, compare the character in the first string with the character 
+  at the same position in all other strings.
+- If a mismatch is found, return the prefix up to that position.
+- If no mismatch is found, return the prefix up to the length of the shortest string.
+
+Time Complexity: O(S) — where S is the sum of all characters in all strings
+Space Complexity: O(1) — only using a constant amount of extra space
+"""
 
 class Solution:
 

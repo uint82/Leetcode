@@ -1,4 +1,32 @@
+"""
+Problem #9: Palindrome Number
 
+Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
+
+Examples:
+Input: x = 121
+Output: true
+Explanation: 121 reads as 121 from left to right and from right to left.
+
+Input: x = -121
+Output: false
+Explanation: From left to right, it reads -121. From right to left, it reads 121-. Therefore it is not a palindrome.
+
+Input: x = 10
+Output: false
+Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
+
+Approach:
+- Handle edge cases first:
+  - Negative numbers are not palindromes (due to the minus sign).
+  - Numbers ending with 0 are not palindromes (except 0 itself).
+- Reverse half of the number and compare with the other half.
+- For numbers with odd digits, the middle digit is ignored in the comparison.
+- This approach avoids converting to string and uses O(1) space.
+
+Time Complexity: O(log n) — where n is the input number (number of digits)
+Space Complexity: O(1) — only using a constant amount of space
+"""
 
 class Solution:
 
@@ -9,17 +37,23 @@ class Solution:
 
         x = self.x
 
+        # Negative numbers are not palindromes
         if x < 0:
             return False
 
+        # Numbers ending with 0 are not palindromes (except 0 itself)
         if x % 10 == 0 and x != 0:
             return False
 
         half = 0
 
+        # Reverse the second half of the number
         while half < x:
             half = (x % 10) + (half * 10)
             x = x // 10
+            
+        # For even number of digits: half == x
+        # For odd number of digits: half // 10 == x (to ignore the middle digit)
         return half == x or half // 10 == x
 
 # Test
