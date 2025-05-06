@@ -1,20 +1,35 @@
+"""
+Problem #409: Longest Palindrome
+
+Given a string s which consists of lowercase or uppercase letters, return the length of the longest palindrome that can be built with those letters.
+
+Letters are case sensitive, so "Aa" is not considered a palindrome here.
+
+Examples:
+Input: s = "abccccdd"
+Output: 7
+Explanation: One longest palindrome that can be built is "dccaccd", whose length is 7.
+
+Input: s = "a"
+Output: 1
+
+Input: s = "bb"
+Output: 2
+
+Approach:
+- Count the occurrences of each character in the string.
+- For each character:
+  - If the count is even, all occurrences can be used in a palindrome.
+  - If the count is odd, (count-1) occurrences can be used, with one possibly placed in the middle.
+- Track if we have at least one character with an odd count, which can be placed in the middle.
+- Calculate the total length based on these rules.
+
+Time Complexity: O(n) — where n is the length of the string
+Space Complexity: O(1) — at most 52 different characters (26 lowercase + 26 uppercase)
+"""
+
 class Solution:
     def longestPalindrome(self, s: str) -> int:
-        """
-        Returns the length of the longest palindrome that can be built with letters from s.
-        
-        Args:
-            s: A string consisting of lowercase and/or uppercase English letters
-            
-        Returns:
-            Length of the longest possible palindrome
-        """
-        
-        # Time Complexity: O(n), where n is the length of the string s.
-        #   - Building the frequency map takes O(n) as we iterate through the string once.
-        #   - Processing the frequency map takes O(1) since it stores at most 52 characters (26 lowercase + 26 uppercase).
-        # Space Complexity: O(1), since the frequency map stores at most 52 characters, which is constant regardless of input size.
-        
         # Create a hashmap to count the occurrences of each character
         char_counts = {}
         
