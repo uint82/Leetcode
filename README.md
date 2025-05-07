@@ -124,7 +124,6 @@ Resources I've found helpful in my LeetCode journey:
   - [LeetCode](https://leetcode.com/)
   - [NeetCode](https://neetcode.io/)
   - [Algorithms Visualized](https://visualgo.net/)
-  - [Blind 75 Question List](https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions)
 
 ## My Problem-Solving Approach
 
