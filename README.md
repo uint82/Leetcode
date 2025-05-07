@@ -144,7 +144,6 @@ When tackling a new problem, I typically follow these steps:
 - [ ] Breadth-First Search
 - [ ] Depth-First Search
 - [ ] Dynamic Programming
-- [ ] Backtracking
 
 
 ## License
