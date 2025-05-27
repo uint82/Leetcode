@@ -87,10 +87,10 @@ Solutions in this repository cover various data structures and algorithms includ
 
 | Category | Number of Problems Solved |
 |----------|---------------------------|
-| Easy     | 6                         |
-| Medium   | 0                         |
+| Easy     | 19                        |
+| Medium   | 1                         |
 | Hard     | 0                         |
-| Total    | 6                         |
+| Total    | 20                        |
 
 ## Goals
 
