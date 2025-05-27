@@ -115,11 +115,6 @@ Feel free to open an issue or submit a pull request if you have suggestions for 
 
 Resources I've found helpful in my LeetCode journey:
 
-- **Books**:
-  - "Cracking the Coding Interview" by Gayle Laakmann McDowell
-  - "Elements of Programming Interviews" by Adnan Aziz, Tsung-Hsien Lee, and Amit Prakash
-  - "Algorithms" by Robert Sedgewick and Kevin Wayne
-
 - **Websites**:
   - [LeetCode](https://leetcode.com/)
   - [NeetCode](https://neetcode.io/)
