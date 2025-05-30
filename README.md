@@ -87,10 +87,10 @@ Solutions in this repository cover various data structures and algorithms includ
 
 | Category | Number of Problems Solved |
 |----------|---------------------------|
-| Easy     | 6                         |
-| Medium   | 0                         |
+| Easy     | 19                        |
+| Medium   | 1                         |
 | Hard     | 0                         |
-| Total    | 6                         |
+| Total    | 20                        |
 
 ## Goals
 
@@ -114,11 +114,6 @@ Feel free to open an issue or submit a pull request if you have suggestions for 
 ## Study Resources
 
 Resources I've found helpful in my LeetCode journey:
-
-- **Books**:
-  - "Cracking the Coding Interview" by Gayle Laakmann McDowell
-  - "Elements of Programming Interviews" by Adnan Aziz, Tsung-Hsien Lee, and Amit Prakash
-  - "Algorithms" by Robert Sedgewick and Kevin Wayne
 
 - **Websites**:
   - [LeetCode](https://leetcode.com/)
