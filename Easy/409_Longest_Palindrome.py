@@ -32,17 +32,17 @@ class Solution:
     def longestPalindrome(self, s: str) -> int:
         # Create a hashmap to count the occurrences of each character
         char_counts = {}
-        
+
         # Count the occurrences of each character
         for char in s:
             if char in char_counts:
                 char_counts[char] += 1
             else:
                 char_counts[char] = 1
-        
+
         length = 0
         has_odd = False
-        
+
         # Calculate the length of the longest palindrome
         for count in char_counts.values():
             if count % 2 == 0:
@@ -52,11 +52,11 @@ class Solution:
                 # If count is odd, we can use (count-1) and mark that we have an odd count
                 length += count - 1
                 has_odd = True
-        
+
         # If we have at least one character with odd count, we can place it in the middle
         if has_odd:
             length += 1
-        
+
         return length
 
 # Test cases
